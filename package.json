@@ -24,7 +24,7 @@
     "express":"*",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26",
-    "postinstall": "ng build --prod"
+   
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.0",
