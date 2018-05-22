@@ -9,6 +9,9 @@ import { TabelaAgendaComponent } from './tabela-agenda/tabela-agenda.component';
 import { HeaderComponent } from './header/header.component';
 import { VisTarefaComponent } from './vis-tarefa/vis-tarefa.component';
 import { DisciplinaComponent } from './disciplina/disciplina.component';
+import { EditarTarefaComponent } from './editar-tarefa/editar-tarefa.component';
+import { VisAmanhaComponent } from './vis-amanha/vis-amanha.component';
+import { VisTarefaAmanhaComponent } from './vis-tarefa-amanha/vis-tarefa-amanha.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { DisciplinaComponent } from './disciplina/disciplina.component';
     TabelaAgendaComponent,
     HeaderComponent,
     VisTarefaComponent,
-    DisciplinaComponent
+    DisciplinaComponent,
+    EditarTarefaComponent,
+    VisAmanhaComponent,
+    VisTarefaAmanhaComponent
    
     
   ],
