@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Tarefa } from '../tarefas';
 
+
+
 @Component({
   selector: 'app-tabela-agenda',
   templateUrl: './tabela-agenda.component.html',
@@ -13,8 +15,8 @@ export class TabelaAgendaComponent implements OnInit {
   feitos = []
   tarefa
   tarefas = []
-
-  constructor() {}
+  
+  
 
   ngOnInit() {
      this.ListaConsultas();
@@ -39,4 +41,11 @@ export class TabelaAgendaComponent implements OnInit {
     localStorage.setItem(chave,JSON.stringify(this.tarefa));
     this.ListaConsultas();
   }
+
+  excluirTarefa(chave){
+
+    localStorage.removeItem(chave);   
+
+  }
+  
 }

@@ -8,6 +8,7 @@ import { routing } from './app.routing';
 import { TabelaAgendaComponent } from './tabela-agenda/tabela-agenda.component';
 import { HeaderComponent } from './header/header.component';
 import { VisTarefaComponent } from './vis-tarefa/vis-tarefa.component';
+import { DisciplinaComponent } from './disciplina/disciplina.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { VisTarefaComponent } from './vis-tarefa/vis-tarefa.component';
     CriarTarefaComponent,
     TabelaAgendaComponent,
     HeaderComponent,
-    VisTarefaComponent
+    VisTarefaComponent,
+    DisciplinaComponent
    
     
   ],

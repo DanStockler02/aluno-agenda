@@ -25,15 +25,19 @@
       </form>
     </td>
     <td>
-    <button class="btn btn-warning"> Editar </button>
-    <button class="btn btn-danger" style="margin-left: 20px;"> Excluir </button></td>
-    
-    
+      <button class="btn btn-warning"style="margin-left: 20px;"> Editar </button>
+      
+      <form (submit)="excluirTarefa(tarefa.chave)">
+      <button class="btn btn-danger" style="margin-left: 20px;" onClick="history.go(0)"> Excluir </button>
+      </form>  
+    </td>
+      
   </tr>
   </tbody>
   </table>
 </div>
   <br/> 
   <a href="/"><button class="btn btn-primary">Voltar</button></a>
+ 
 <br/>
 <br/>

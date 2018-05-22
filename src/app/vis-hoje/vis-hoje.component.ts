@@ -30,6 +30,7 @@ export class VisHojeComponent implements OnInit{
   for (let index = 0; index < localStorage.length; index++) {
 
     this.tarefa = JSON.parse(localStorage.getItem(localStorage.key(index)));
+    
    
     if(this.tarefa.date == this.dataHoje){
      

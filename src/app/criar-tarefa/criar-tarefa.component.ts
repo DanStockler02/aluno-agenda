@@ -4,6 +4,7 @@ import { stringify } from '@angular/compiler/src/util';
 import { NgModel } from '@angular/forms';
 import { Tarefa } from '../tarefas';
 import { constructDependencies } from '@angular/core/src/di/reflective_provider';
+import { Disciplina } from '../disciplina';
 
 
 @Component({
@@ -18,8 +19,26 @@ export class CriarTarefaComponent  {
  diciplina
  descricao
  estado
+ disc 
+ dp : Disciplina
+ vdisc = []
  tarefa : Tarefa
- lista =[]
+
+
+
+addDisciplina(){
+
+  for (let index = 0; index < localStorage.length; index++) {
+    this.disc = JSON.parse(localStorage.getItem(localStorage.key(index)));
+    if(this.disc.chave < 60){
+      this.vdisc.push(this.disc.nome);
+    }
+    
+  }
+ 
+}
+
+
  CriarTarefa(){
   
   var chavedate = new Date();

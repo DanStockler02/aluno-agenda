@@ -12,9 +12,10 @@
         <div class="form-group">
             <label>Diciplina</label>
             <select [(ngModel)]="diciplina" class="form-control">
-                <option value="Matemática">Matematica</option>
-                <option value="Ling.Portuguesa">Ling.Portuguesa</option>
-                <option value="Historia">Historia</option>
+                <option *ngFor="let dis of disc" [value]="dis.nome">
+                    {{dis.nome}}
+                </option>
+               
             </select>
         </div>
         <div class="form-group">
