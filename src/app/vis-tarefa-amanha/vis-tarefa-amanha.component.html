@@ -1,3 +1,30 @@
-<p>
-  vis-tarefa-amanha works!
-</p>
+<br/>
+<br/>
+<div>
+    <li *ngFor="let tarefa of tarefas"
+    (click)="onSelect(tarefa)"class="btn btn-secondary" style="margin-left: 10px;">
+    {{tarefa.nome}}
+
+  </li>
+</div>
+<br/>
+
+<div *ngIf="selectedTarefa">
+       
+  <div>
+    <span style="margin-left: 20px;">nome: </span>{{selectedTarefa.nome}}
+    <br/>
+    <span style="margin-left: 20px;">data: </span>{{selectedTarefa.date}}
+    <br/>
+    <span style="margin-left: 20px;">diciplina: </span>{{selectedTarefa.diciplina}}
+    <br/>
+    <span style="margin-left: 20px;">descricao: </span>{{selectedTarefa.descricao}}
+    <br/>
+    <span style="margin-left: 20px;">estado: </span>{{selectedTarefa.estado}}
+  
+  </div>
+        
+</div>
+<br/>
+<a type="button" class="btn btn-danger" style="margin-left: 20px;" href="/">Voltar</a>
+
