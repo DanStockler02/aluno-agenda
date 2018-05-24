@@ -5,6 +5,7 @@ import { TabelaAgendaComponent } from './tabela-agenda/tabela-agenda.component';
 import { VisTarefaComponent } from './vis-tarefa/vis-tarefa.component';
 import { DisciplinaComponent } from './disciplina/disciplina.component';
 import { ModuleWithProviders } from '@angular/core';
+import { VisTarefaAmanhaComponent } from './vis-tarefa-amanha/vis-tarefa-amanha.component';
 
 const APP_ROUTES: Routes = [
        
@@ -12,7 +13,8 @@ const APP_ROUTES: Routes = [
     { path: '', component: VisHojeComponent  },
     { path: 'tabela-agenda', component: TabelaAgendaComponent},   
     { path: 'vis-tarefa', component: VisTarefaComponent},
-    { path: 'disciplina', component: DisciplinaComponent}
+    { path: 'disciplina', component: DisciplinaComponent},
+    { path: 'vis-tarefa-amanha', component: VisTarefaAmanhaComponent}
     
 
 ] ;
