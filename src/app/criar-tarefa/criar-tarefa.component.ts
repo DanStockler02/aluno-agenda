@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Button } from 'protractor';
 import { stringify } from '@angular/compiler/src/util';
 import { NgModel } from '@angular/forms';
@@ -12,38 +12,40 @@ import { Disciplina } from '../disciplina';
   templateUrl: './criar-tarefa.component.html',
   styleUrls: ['./criar-tarefa.component.css']
 })
-export class CriarTarefaComponent  {
+export class CriarTarefaComponent implements OnInit {
 
  nome
  date
  diciplina
  descricao
  estado
- disc 
- dp : Disciplina
  vdisc = []
+ dis
  tarefa : Tarefa
+ verifica :number = 1000
 
 
-
-addDisciplina(){
-
+ ngOnInit() {
+  
   for (let index = 0; index < localStorage.length; index++) {
-    this.disc = JSON.parse(localStorage.getItem(localStorage.key(index)));
-    if(this.disc.chave < 60){
-      this.vdisc.push(this.disc.nome);
+    this.dis= JSON.parse(localStorage.getItem(localStorage.key(index)));
+
+    var chaveamento = parseInt(this.dis.chave);
+    
+    if(chaveamento < this.verifica){
+      this.vdisc.push(this.dis.nomedis);
+      console.log(this.vdisc);
     }
     
   }
  
 }
 
-
  CriarTarefa(){
   
   var chavedate = new Date();
   var time = chavedate.getTime();
-  var chave: string = 'lista-'+ time;
+  var chave: string = time.toString();
 
    this.tarefa = new Tarefa(
    chave,

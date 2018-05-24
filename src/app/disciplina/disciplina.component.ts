@@ -8,7 +8,7 @@ import { NgModel } from '@angular/forms';
 })
 export class DisciplinaComponent  {
 
- nome
+ nomedis
  nomeProf
  horario
  disciplina : Disciplina
@@ -17,19 +17,18 @@ export class DisciplinaComponent  {
 
   var chavedate = new Date();
   var time = chavedate.getSeconds();
-  var chave: string = 'lista-' + time;
+  var chave :string  = Math.floor((Math.random()*999)+1).toString();
 
     this.disciplina = new Disciplina(
       chave,
-      this.nome,
+      this.nomedis,
       this.nomeProf,
       this.horario
 
     );
 
-    localStorage.setItem(chave,JSON.stringify(this.disciplina));
-    
-    this.disciplina = null
+    localStorage.setItem(chave,JSON.stringify(this.disciplina));  
+    this.nomedis= null
     this.nomeProf = null
     this.horario = null
  }

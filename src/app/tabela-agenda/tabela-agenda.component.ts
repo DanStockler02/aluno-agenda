@@ -15,6 +15,7 @@ export class TabelaAgendaComponent implements OnInit {
   feitos = []
   tarefa
   tarefas = []
+  verifica :number = 1000
   
   
 
@@ -26,7 +27,11 @@ export class TabelaAgendaComponent implements OnInit {
     this.tarefas = []
     for (let index = 0; index < localStorage.length; index++) {
       this.tarefa = JSON.parse(localStorage.getItem(localStorage.key(index)));
-      this.tarefas.push(this.tarefa);
+      var chaveamento = parseInt(this.tarefa.chave);
+      if(chaveamento > this.verifica){
+        this.tarefas.push(this.tarefa);
+      }
+      
     }
   }
 

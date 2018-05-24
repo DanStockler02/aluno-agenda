@@ -1,7 +1,7 @@
 export class Disciplina{
     
     chave: string
-    nome: string;
+    nomedis: string;
     nomeProf: string;
     horario: string;
 
@@ -10,13 +10,13 @@ export class Disciplina{
     constructor(
           
         chave: string,
-        nome: string,
+        nomedis: string,
         nomeProf: string,
         horario: string
 
     ){ 
         this.chave = chave;
-        this.nome = nome;
+        this.nomedis = nomedis;
         this.nomeProf = nomeProf;
         this.horario = horario;
     }
