@@ -25,8 +25,7 @@
       </form>
     </td>
     <td>
-      <button class="btn btn-warning"style="margin-left: 20px;"> Editar </button>
-      
+      <a href="/editar-tarefa/{{tarefa.chave}}"> <button class="btn btn-warning"style="margin-left: 20px;"> Editar </button></a>
       <form (submit)="excluirTarefa(tarefa.chave)">
       <button class="btn btn-danger" style="margin-left: 20px;" onClick="history.go(0)"> Excluir </button>
       </form>  

@@ -1,3 +1,32 @@
-<p>
-  editar-tarefa works!
-</p>
+<app-header></app-header>
+    <div class="container-fluid" style="padding:30px;">
+        <br/>
+        <div class="form-group">
+            <label>Nome</label>
+            <input [(ngModel)]="nome" class="form-control" type="text" id="nome">
+        </div>
+        <div class="form-group">
+            <label>Data de Entrega</label>
+            <input [(ngModel)]="date" class="form-control" type="date" name="data entrega" id="data entrega">
+        </div>
+        <div class="form-group">
+            <label>Diciplina</label>
+            <select [(ngModel)]="diciplina"  class="form-control">
+                <option *ngFor="let dis of vdisc" [value]="dis">
+                    {{dis}}
+                </option>
+               
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Descrição</label>
+            <textarea [(ngModel)]="descricao" class="form-control" rows="3" aria-label="with testearea" id="descrição"></textarea>
+        </div>
+
+        <br/>
+        <br/>
+        <div style="text-align: right">
+        <a href="/tabela-agenda"><button type="button" class="btn btn-primary" (click)="editarTarefa()" id="criar">Editar</button></a>
+        <a href="/tabela-agenda"><button type="button" class="btn btn-danger" style="margin-left:10px">Cancelar</button></a>
+        </div>
+    </div>

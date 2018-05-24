@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Tarefa } from '../tarefas';
-
+import { EditarTarefaComponent } from '../editar-tarefa/editar-tarefa.component'
 
 
 @Component({

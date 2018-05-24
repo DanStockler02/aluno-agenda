@@ -1,0 +1,32 @@
+<app-header></app-header>
+<br/>
+<br/>
+<div class="contet" style="margin:30px;">
+<table class="table display" border="1" id="tabela">
+  <thead class="thead-dark">
+    <th>Nome</th>
+    <th>Nome Professor</th>
+    <th>Horario</th>
+    <th>Acões</th>
+
+  </thead>
+  <tbody>
+  <tr *ngFor="let disciplina of disciplinas">
+    <td>{{ disciplina.nomedis }}</td>
+    <td>{{ disciplina.nomeProf }}</td>
+    <td>{{ disciplina.horario }}</td>
+    
+    <td>
+      <button class="btn btn-warning"style="margin-left: 20px;"> Editar </button>
+      <button class="btn btn-danger" style="margin-left: 20px;"> Excluir </button>
+    </td>
+      
+  </tr>
+  </tbody>
+  </table>
+</div>
+  <br/> 
+  <a href="/"><button class="btn btn-primary">Voltar</button></a>
+ 
+<br/>
+<br/>
