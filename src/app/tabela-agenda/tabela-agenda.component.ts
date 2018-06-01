@@ -48,7 +48,6 @@ export class TabelaAgendaComponent implements OnInit {
   }
 
   excluirTarefa(chave){
-
     localStorage.removeItem(chave);   
 
   }

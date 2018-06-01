@@ -8,6 +8,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { VisTarefaAmanhaComponent } from './vis-tarefa-amanha/vis-tarefa-amanha.component';
 import { EditarTarefaComponent } from './editar-tarefa/editar-tarefa.component';
 import { TabelaDisciplinaComponent } from './tabela-disciplina/tabela-disciplina.component';
+import { EditarDisciplinaComponent } from './editar-disciplina/editar-disciplina.component';
 
 const APP_ROUTES: Routes = [
        
@@ -18,7 +19,8 @@ const APP_ROUTES: Routes = [
     { path: 'disciplina', component: DisciplinaComponent},
     { path: 'vis-tarefa-amanha', component: VisTarefaAmanhaComponent},
     { path: 'editar-tarefa/:chave', component: EditarTarefaComponent},
-    { path: 'tabela-disciplina', component: TabelaDisciplinaComponent}
+    { path: 'tabela-disciplina', component: TabelaDisciplinaComponent},
+    { path: 'editar-disciplina/:chave', component: EditarDisciplinaComponent}
 
 ] ;
 

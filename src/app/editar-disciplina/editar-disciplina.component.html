@@ -1,0 +1,26 @@
+<app-header></app-header>
+    <div class="container-fluid" style="padding:30px;">
+        <br/>
+        <div class="form-group">
+            <label>Nome</label>
+            <input [(ngModel)]="nome" class="form-control" type="text" id="nome">
+        </div>
+        <div class="form-group">
+            <label>Nome Professor</label>
+            <input [(ngModel)]="professor" class="form-control" type="text" id="professor">
+        </div>
+
+        <div class="form-group">
+          <label>Horário</label>
+          <input [(ngModel)]="horario" class="form-control" type="text" id="horario">
+      </div>
+
+     <div>
+
+    <br/>
+    <br/>
+    <div style="text-align: right">
+    <a href="/tabela-disciplina"><button type="button" class="btn btn-primary" (click)="editarDisciplina()" id="criar">Editar</button></a>
+    <a href="/tabela-disciplina"><button type="button" class="btn btn-danger" style="margin-left:10px">Cancelar</button></a>
+    </div>
+</div>

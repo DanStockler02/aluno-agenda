@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Disciplina } from '../disciplina';
 
+
 @Component({
   selector: 'app-tabela-disciplina',
   templateUrl: './tabela-disciplina.component.html',
@@ -32,5 +33,9 @@ export class TabelaDisciplinaComponent implements OnInit {
       }
       
     }
+  }
+
+  ExcluirDisciplina(chave){
+    localStorage.removeItem(chave);  
   }
 }

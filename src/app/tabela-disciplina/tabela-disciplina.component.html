@@ -17,8 +17,10 @@
     <td>{{ disciplina.horario }}</td>
     
     <td>
-      <button class="btn btn-warning"style="margin-left: 20px;"> Editar </button>
-      <button class="btn btn-danger" style="margin-left: 20px;"> Excluir </button>
+      <a href="/editar-disciplina/{{disciplina.chave}}"><button class="btn btn-warning"style="margin-left: 20px;"> Editar </button></a>
+      <form (submit)="ExcluirDisciplina(disciplina.chave)">
+      <button class="btn btn-danger" style="margin-left: 20px" onClick="history.go(0)"> Excluir </button>
+      </form>
     </td>
       
   </tr>

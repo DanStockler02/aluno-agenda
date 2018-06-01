@@ -13,6 +13,7 @@ import { EditarTarefaComponent } from './editar-tarefa/editar-tarefa.component';
 import { VisAmanhaComponent } from './vis-amanha/vis-amanha.component';
 import { VisTarefaAmanhaComponent } from './vis-tarefa-amanha/vis-tarefa-amanha.component';
 import { TabelaDisciplinaComponent } from './tabela-disciplina/tabela-disciplina.component';
+import { EditarDisciplinaComponent } from './editar-disciplina/editar-disciplina.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { TabelaDisciplinaComponent } from './tabela-disciplina/tabela-disciplina
     EditarTarefaComponent,
     VisAmanhaComponent,
     VisTarefaAmanhaComponent,
-    TabelaDisciplinaComponent
+    TabelaDisciplinaComponent,
+    EditarDisciplinaComponent
    
     
   ],
