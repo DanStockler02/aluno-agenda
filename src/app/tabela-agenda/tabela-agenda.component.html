@@ -25,9 +25,9 @@
       </form>
     </td>
     <td>
-      <a href="/editar-tarefa/{{tarefa.chave}}"> <button class="btn btn-warning"style="margin-left: 20px;"> Editar </button></a>
+      <a href="/editar-tarefa/{{tarefa.chave}}"> <button class="btn btn-warning"style="margin-bottom: 5px"> Editar </button></a>      
       <form (submit)="excluirTarefa(tarefa.chave)">
-      <button class="btn btn-danger" style="margin-left: 20px;" onClick="history.go(0)"> Excluir </button>
+      <button class="btn btn-danger" style="margin-top: 5px" onClick="history.go(0)"> Excluir </button>
       </form>  
     </td>
       
@@ -36,7 +36,7 @@
   </table>
 </div>
   <br/> 
-  <a href="/"><button class="btn btn-primary">Voltar</button></a>
+  <a href="/"><button class="btn btn-primary" style="margin-left: 20px">Voltar</button></a>
  
 <br/>
 <br/>
