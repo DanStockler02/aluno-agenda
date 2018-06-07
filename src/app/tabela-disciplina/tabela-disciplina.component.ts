@@ -9,6 +9,7 @@ import { Disciplina } from '../disciplina';
 })
 export class TabelaDisciplinaComponent implements OnInit {
 
+  
   nome
   professor
   horario

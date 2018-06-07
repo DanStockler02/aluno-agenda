@@ -16,6 +16,7 @@ import { TabelaDisciplinaComponent } from './tabela-disciplina/tabela-disciplina
 import { EditarDisciplinaComponent } from './editar-disciplina/editar-disciplina.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -26,6 +26,7 @@ export class EditarDisciplinaComponent implements OnInit {
   }
 
   ngOnInit() {
+    
   }
 
   editarDisciplina(){
