@@ -23,18 +23,28 @@ export class VisHojeComponent implements OnInit{
 
  ngOnInit() {
    
-  if(this.date.getMonth()< 10){
+  if(this.date.getMonth()< 10 && this.date.getDate() < 10){
+    this.dataHoje= this.date.getFullYear().toString() + '-' +'0'+(this.date.getMonth() + 1 ) + '-' + '0'+this.date.getDate();
+    console.log(this.dataHoje);
+  }else if(this.date.getMonth()< 10){
     this.dataHoje= this.date.getFullYear().toString() + '-' +'0'+(this.date.getMonth() + 1 ) + '-' + this.date.getDate();
+    console.log(this.dataHoje);
+  }else if(this.date.getDate()< 10){
+    this.dataHoje= this.date.getFullYear().toString() + '-' +(this.date.getMonth() + 1 ) + '-' + '0'+this.date.getDate();
+    console.log(this.dataHoje);
   }
   
   for (let index = 0; index < localStorage.length; index++) {
 
     this.tarefa = JSON.parse(localStorage.getItem(localStorage.key(index)));
+
+    console.log(this.tarefa.date);
     
    
     if(this.tarefa.date == this.dataHoje){
      
       this.tarefas.push(this.tarefa);
+      console.log(this.tarefa.date);
 
      }
 
@@ -51,4 +61,3 @@ onSelect(tarefa: Tarefa): void {
 
 
 }
-

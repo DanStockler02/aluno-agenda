@@ -15,7 +15,6 @@ import { VisTarefaAmanhaComponent } from './vis-tarefa-amanha/vis-tarefa-amanha.
 import { TabelaDisciplinaComponent } from './tabela-disciplina/tabela-disciplina.component';
 import { EditarDisciplinaComponent } from './editar-disciplina/editar-disciplina.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
