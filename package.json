@@ -23,7 +23,6 @@
     "@angular/router": "^6.0.0",
     "@angular/cli": "~6.0.0",
     "@angular/compiler-cli": "^6.0.0",
-    "FortAwesome/Font-Awesome": "*",
     "core-js": "^2.5.4",
     "express": "^4.16.2",
     "rxjs": "^6.0.0",
