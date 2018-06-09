@@ -1,12 +1,29 @@
-<div style="margin-left: 10px;" >
-	{{title}}
-	{{date.getDate()+1}} / {{date.getMonth()+1}} / {{date.getFullYear()}}
-</div>
-<div>
-    <li *ngFor="let tarefa of tarefas" style="margin-left: 10px;">
-    {{tarefa.nome}}
+<br/>
+<br/>
 
-  </li>
+    <tr align = "rigth">
+        <div id = "visao">
+            <ul>
+            <div  style="margin-left: 30px;" > 
+                 <li> <pre>{{title}}        {{date.getDate()}} / {{date.getMonth()+1}} / {{date.getFullYear()}}  <span class="badge badge-secondary"></span></pre>
+                 </li>
+             </div>
+             </ul>
+        </div>
 
-  <a type="button" class="btn btn-primary" style="margin-left: 20px;" href="/vis-tarefa-amanha">Mostrar Tarefas</a>
-</div>
+        <div id="seila">
+       
+            <li *ngFor="let tarefa of tarefas" class="badge badge-info" style="margin-top: 10px; " >        
+              <h3><button type="button" class="btn btn-info btn-lg btn-block">{{tarefa.nome}}</button></h3>      
+          </li>
+        </div>
+        <br/>
+        <a type="button" class="btn btn-danger" style="margin-left: 345px;" href="/vis-tarefa-amanha">Mostrar Tarefas</a>
+        <br/>
+        
+    </tr>
+
+    
+  
+
+

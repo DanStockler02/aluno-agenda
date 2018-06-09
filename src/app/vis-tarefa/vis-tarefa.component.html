@@ -1,9 +1,10 @@
+<app-header></app-header>
 <br/>
 <br/>
 <div>
     <li *ngFor="let tarefa of tarefas"
-    (click)="onSelect(tarefa)"class="btn btn-secondary" style="margin-left: 10px;">
-    {{tarefa.nome}}
+    (click)="onSelect(tarefa)"class="btn btn-info" style="margin-left: 10px;">
+    <h5>{{tarefa.nome}}</h5>
 
   </li>
 </div>
@@ -12,20 +13,25 @@
 <div *ngIf="selectedTarefa">
        
   <div>
-    <span style="margin-left: 20px;">nome: </span>{{selectedTarefa.nome}}
-    <br/>
-    <span style="margin-left: 20px;">data: </span>{{selectedTarefa.date}}
-    <br/>
-    <span style="margin-left: 20px;">diciplina: </span>{{selectedTarefa.diciplina}}
-    <br/>
-    <span style="margin-left: 20px;">descricao: </span>{{selectedTarefa.descricao}}
-    <br/>
-    
-    <span style="margin-left: 20px;">estado: </span>{{(selectedTarefa.estado) ? 'Feito' : 'Não feito' }}
-  
+    <h5>
+        <span style="margin-left: 20px;">nome: </span>{{selectedTarefa.nome}}
+        <br/>
+        <span style="margin-left: 20px;">data: </span>{{selectedTarefa.date}}
+        <br/>
+        <span style="margin-left: 20px;">diciplina: </span>{{selectedTarefa.diciplina}}
+        <br/>
+        <span style="margin-left: 20px;">descricao: </span>{{selectedTarefa.descricao}}
+        <br/>
+        <span style="margin-left: 20px;">estado: </span>{{(selectedTarefa.estado) ? 'Feito' : 'Não feito' }}
+    </h5>
   </div>
-        
+    
+
+       
 </div>
-<br/>
-<a type="button" class="btn btn-danger" style="margin-left: 20px;" href="/">Voltar</a>
+<h5>
+    <br/>
+    <a type="button" class="btn btn-danger" style="margin-left: 20px;" href="/">Voltar</a>
+</h5>
+
 

@@ -1,0 +1,34 @@
+pre{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+span{
+    text-align: center;
+}
+table{
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 920px;
+    width: 835px;
+    
+}
+#seila li{
+    
+    margin-right: auto;
+    margin-left: 50px;
+    width: 720px;
+      
+
+}
+a{
+    margin-right: auto;
+    margin-left: 400px;
+    border-radius: 200px;
+    background-color:  #af140c;
+}
