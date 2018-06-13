@@ -65,9 +65,8 @@ export class CriarTarefaComponent implements OnInit {
  }
 
  
- 
 
-  }
+}
   
 
 

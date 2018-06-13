@@ -58,6 +58,25 @@ onSelect(tarefa: Tarefa): void {
  
 }
 
+appNotification(){
+  var notification = new Notification('Notification title', {
+    icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
+    body: "Hey there! You've been notified!",
+  });
+  
+  document.addEventListener('DOMContentLoaded', function () {
+   
+    //Se não tiver suporte a Notification manda um alert para o usuário
+    if (!Notification) {
+      alert('Desktop notifications not available in your browser. Try Chromium.'); 
+      return;
+    }
+    
+    
+  });
+  
+}
+
 
 
 }
